@@ -76,7 +76,19 @@ class ARCTICViewer:
         size=(2024, 2024),
     ):
         if not interactive:
-            v = HeadlessRenderer()
+            try:
+                v = HeadlessRenderer(size=size)
+            except:
+                import subprocess
+                import time
+                import os
+
+                subprocess.Popen(
+                    ["Xvfb", ":99", "-screen", "0", f"{size[0]}x{size[1]}x24"]
+                )
+                time.sleep(2)
+                os.environ["DISPLAY"] = ":99"
+                v = HeadlessRenderer(size=size)
         else:
             v = Viewer(size=size)
 
