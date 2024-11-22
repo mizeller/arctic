@@ -169,7 +169,7 @@ def construct_obj(object_model_p):
     sub_v = np.concatenate((sub_top, sub_bottom), axis=0)
 
     with open(parts_p, "r") as f:
-        parts = np.array(json.load(f), dtype=np.bool)
+        parts = np.array(json.load(f), dtype=bool)
 
     assert op.exists(mesh_p), f"Not found: {mesh_p}"
 

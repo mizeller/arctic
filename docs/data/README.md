@@ -13,12 +13,13 @@
 
 ## Table of content
 
-- [Overview](#overview)
-- [Sanity check](#sanity-check-on-the-data-pipeline)
-- [Download full ARCTIC](#download-full-arctic)
-- [Data documentation](data_doc.md)
-- [Data preprocessing and splitting](processing.md)
-- [Data visualization](visualize.md)
+- [ARCTIC dataset](#arctic-dataset)
+  - [Table of content](#table-of-content)
+  - [Overview](#overview)
+  - [Sanity check on the data pipeline](#sanity-check-on-the-data-pipeline)
+  - [Download full ARCTIC](#download-full-arctic)
+    - [Using the same splits as our CVPR baselines](#using-the-same-splits-as-our-cvpr-baselines)
+    - [Having full control on ARCTIC dataset](#having-full-control-on-arctic-dataset)
 
 ## Overview
 
